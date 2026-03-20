@@ -97,14 +97,14 @@ Tags: change, deep-thoughts, thinking
 Run these commands to explore:
 
 bash
-Count total items
-sqlite3 data/scraper.db "SELECT COUNT(*) FROM products;"
+Count total items:
+-sqlite3 data/scraper.db "SELECT COUNT(*) FROM products;"
 
-See latest items
-sqlite3 data/scraper.db "SELECT title, price, site_name FROM products ORDER BY timestamp DESC LIMIT 5;"
+See latest items:
+-sqlite3 data/scraper.db "SELECT title, price, site_name FROM products ORDER BY timestamp DESC LIMIT 5;"
 
-See what websites you have data from
-sqlite3 data/scraper.db "SELECT site_name, COUNT(*) FROM products GROUP BY site_name;"
+See what websites you have data from:
+-sqlite3 data/scraper.db "SELECT site_name, COUNT(*) FROM products GROUP BY site_name;"
 
 
 # Built With
